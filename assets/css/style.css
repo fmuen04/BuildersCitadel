@@ -1,0 +1,68 @@
+/* Grundlegende Layout-Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#gameContainer {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Steuerungselemente */
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Hexagonfeld */
+#hexagonGridContainer {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* 10 Spalten von 50px */
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hexagon {
+    width: 50px;
+    height: 50px;
+    background-color: #6a5acd;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.hexagon:hover {
+    background-color: #483d8b;
+}
