@@ -1,4 +1,5 @@
-# Builders Citadel
+# Builders Citadel ![Logo](assets/bc_logo.png)
+
 
 **Builders Citadel** is a planned strategy game where players build and manage a city on a hexagonal grid. The main focus is on economic simulation, resource management, and strategic planning.
 
